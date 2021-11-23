@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+.nav-link:hover{
+    background-color: #6ab5d8;
+}
+.recortar {
+    width: 230px;
+    height: 300px;
+}
+
+nav {
+    padding: 1%;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 8px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+
+/*menu de internet*/
+
+#menu li a {
+    color: rgb(38, 41, 39);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+
+#menu li p {
+    color: rgb(38, 41, 39);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+
+#menu li a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+#menu li {
+    float: left;
+    text-align: center;
+}
+
+
+/* fin del menu */
+
+.color-menu {
+    /* color del menu */
+    /* background-color: #61B47E;*/
+    background-color: #308CB5;
+}
+
+aside {
+    width: 33%;
+}
+
+#presentacion-derecha {
+    margin-left: auto;
+}
+
+#alineacion-derecha {
+    text-align: right;
+}
+
+#textos {
+    width: 80%;
+    margin: auto;
+}
+
+#logo {
+    width: 300px;
+}
+
+#iconos {
+    width: 50px;
+}
+
+.responsive-bg {
+    background-image: url(../img/Storytelling3.png);
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
+}
+
+#en-linea {
+    display: flex;
+}
+
+#web {
+    padding-top: 20px;
+    border: 0%;
+    width: 200px;
+    height: 350px;
+}
+
+#web2 {
+    padding-top: 20px;
+    border-radius: 0%;
+    margin-right: 20%;
+    margin-right: 10%;
+    width: 250px;
+    height: 350px;
+}
+
+#texto-venta {
+    color: black;
+}
+
+#consejos {
+    width: 500px;
+    height: 400px;
+}
+
+h1 {
+    color: black;
+}
+
+#imagenes {
+    height: 300px;
+    width: 150px;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.final {
+    background: rgb(184, 219, 209);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #D4E9E3 100%);
+}
+
+.regresar {
+    color: #308CB5;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+footer {
+    background-color: rgb(200, 204, 240);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+.final-error{
+    background-color: #939e9b;
+}
+
+.redes{
+    padding-top: 1%;
+    width: 50px;
+}

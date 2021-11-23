@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--ANIMACION AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Generacion de Flavicon que aparece visualmente la imagen iconizada en la pestaña
+    Se adapta a diferentes plataformas-->
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!-- Flavicon PARA APPLE-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <!-- Flavicon PARA ANDROID-->
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--ESTILOS-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-emergencias.css" rel="stylesheet">
+    <!--JS-->
+    <link href="js/validacion.js" rel="stylesheet">
+    <!--LEO Y ENTIENDO: señalo el contenido de la pestaña-->
+    <title>Check Heart - Emergencias</title>
+</head>
+
+<body class="fondo mb-0" id="inicio">
+    <header>
+        <!-- menu de idioma -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="Idiomas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+                    </svg>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="error.html">Ingles</a></li>
+                <li><a class="dropdown-item" href="error.html">Portugues</a></li>
+            </ul>
+        </div>
+
+        <!-- Logo -->
+        <div data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+            <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
+        </div>
+        <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
+    </header>
+
+    <main>
+        <!--Asegura la accesibilidad mediante el uso de un <nav>
+            encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
+            <nav class="navbar navbar-center navbar-dark color-menu navbar-expand-md ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " href="index.html">Home</a>
+                        <a class="nav-link " href="vida-saludable.html">Vida saludable</a>
+                        <a class="nav-link active" href="emergencias.html">Emergencias</a>
+                        <a class="nav-link" href="iniciar-sesion.html">Cuenta</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+
+        <!--LEO Y ENTIENDO:-->
+        <!-- Utilizamos PROPIEDAD ALT en imagenes para visualizar e interpretar su contenido-->
+        <!--Alt Text, es un metadato de vital importancia para la accesibilidad. Consiste en describir en palabras el contenido de un elemento no textual. Este texto es usualmente no visible por las personas pero suele aparecer: cuando está deshabilitada la carga de imágenes desde el navegador.-->
+        <section class="container text-center">
+            <article class="p-4 row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div data-aos="zoom-in-right">
+                        <img class="img-fluid " src="img/explain.png" alt="Storytelling: Este es el portal de autogestión para solicitar una consulta médica" 
+                        data-aos="zoom-out-down" data-bs-toggle="tooltip" data-bs-placement="top" title="Storytelling: Este es el portal de autogestión para solicitar una consulta médica" style="width: 25em;">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h1 class="text-dark text-center fw-bolder mt-5 p-5">Este es el portal de autogestión para solicitar una consulta médica</h1>
+                </div>
+            </article>
+
+            <div class=" regresar text-end">
+                <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class=" p-2 bi bi-arrow-up-circle " viewBox="0 0 16 16">
+                        <path  fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section class="container-fluid row " id="telefonos">
+            <article class="display-3 p-3 m-1 col" data-aos="zoom-out-down">
+                <div class="text-center ">
+                    <h2 class="text-secondary">
+                        Para realizar una videoconsulta con un médico y sin esperas
+                    </h2>
+                    <button type="button " class="btn btn-warning ">
+                        <!--Si se comenta la etiqueta SPAN dejan de girar los botones-->                        
+                        <!-- <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>-->
+                        Clickea aqui
+                    </button>
+                    <h6 class="text-muted ">
+                        Si es necesario el médico podrá indicar una visita presencial.
+                    </h6>
+                </div>
+            </article>
+
+            <article class="display-3 p-3 m-1 col" data-aos="zoom-out-down">
+                <div class="text-center ">
+                    <h2 class="text-secondary ">
+                        Si tenés una emergencia, por favor comunicate al
+                    </h2>
+                    <button type="button " class=" btn btn-danger ">
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        0810-444-0911
+                    </button>
+                </div>
+            </article>
+
+            <article class="display-3 p-3 m-1 col" data-aos="zoom-out-down">
+                <div class="text-center">
+                    <h2 class="text-secondary ">Si querés solicitar que un médico se acerque a tu domicilio </h2>
+                    <button type="button" class="btn btn-warning">
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Clickea aqui
+                    </button>
+                </div>
+            </article>
+        </section>
+
+
+        <section>
+            <article>
+                <h6 class="text-muted text-center p-5 ">
+                    Te recordamos que por la situación actual estamos con demoras mayores a las habituales Por cualquier consulta te podés comunicar por
+                    <br> Whatsapp al +54 9 11 6910-3637
+                </h6>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <div>
+                    <h1 class="text-dark text-center fw-bolder mt-5 p-5">Controlemos la Presion Arterial</h1>
+                </div>
+                <div class="text-center pt-3 ">
+                    <img class="img-fluid" src="img/idea2.png " alt="Controlemos la Presion Arterial"
+                     data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-bs-toggle="tooltip" 
+                     data-bs-placement="top" title="Storytelling: Controlemos la Presion Arterial" style="width: 15em;">
+                </div>
+
+                <div>
+                    <h4 class="m-5 p-5 text-center fw-bolder">Controlar las cifras tensionales previene el riesgo de sufrir infartos cerebrales y de miocardio, insuficiencia cardiaca, etc. Con nuestro plan de acción podrás tenerla a raya.</h6>
+                </div>
+
+                <div class="contenedor m-5 ">
+                    <iframe width="560 " height="315 " src="https://www.youtube.com/embed/J3IXZ25siWk " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
+            " allowfullscreen alt="Video de como medir la presion arterial"></iframe>
+                </div>
+            </article>
+
+            <article class="container-fluid final ">
+
+                <div class="container-fluid text-center ">
+                    <h3 class="m-5 fw-bolder">Hagamos el siguiente Cuestionario para saber como te encuentras hoy </h3>
+                </div>
+
+                <div class="col-md-6 mt-5 pb-5 mx-auto ">
+                    <!--LEO Y ENTIENDO:-->
+                    <!-- Utilizamos METODO GET: "Para que el usuario visualise los datos enviados por la URL "-->
+
+                    <form class="text-right p-5 was-validated" novalidate action="# " method="get" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <!-- con js needs-validation-->
+                        <div class="mb-2">
+                            <label class="form-label" for="edad ">Edad</label>
+                            <input class="form-control" id="edad " type="number" name="edad " min="0 " max="110 " required selected><br>
+                            <div class="valid-feedback mt-0 mb-5">
+                                Dato ingresado
+                            </div>
+                            <div class="invalid-feedback mt-0 mb-5">
+                                Completa, tu edad es importante para la conclusion final.
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label mb-1" for="Sistolica ">Presion Sistolica </label>
+                            <div id="HelpBlock" class="form-text mt-0">
+                                Es la cifra superior (y más alta)
+                            </div>
+                            <input class="form-control" id="Sistolica " type="number" name="Sistolica " min="0 " max="220 " aria-describedby="HelpBlock" required selected><br>
+                            <div class="valid-feedback mt-0 mb-5">
+                                Dato ingresado
+                            </div>
+                            <div class="invalid-feedback mt-0 mb-5">
+                                Completa, cuanto mide tu Presion Sistolica es importante para la conclusion final.
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label mb-1" for="Diastolica ">Presion Diastolica </label>
+                            <div id="HelpBlock" class="form-text mt-0">
+                                Es la cifra inferior (y más baja)
+                            </div>
+                            <input class="form-control" id="Diastolica " type="number" name="Diastolica " min="0 " max="220 " aria-describedby="HelpBlock" required selected><br>
+                            <div class="valid-feedback mt-0 mb-5">
+                                Dato ingresado
+                            </div>
+                            <div class="invalid-feedback mt-0 mb-5">
+                                Completa, cuanto mide tu Presion Sistolica es importante para la conclusion final.
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1" data-bs-toggle="tooltip" data-bs-placement="top" title="Hombre">
+                                <span>Hombre</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16" >
+                                    <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+                                  </svg>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1" data-bs-toggle="tooltip" data-bs-placement="top" title="Mujer">
+                                <span>Mujer</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16" >
+                                    <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+                                  </svg>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1" data-bs-toggle="tooltip" data-bs-placement="top" title="Otro / Prefiero no decirlo">
+                              Otro / Prefiero no decirlo
+                            </label>
+                        </div>
+
+                        <p class="text-center">Seleccione todas las casillas que considere:</p>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Herencia-familiar">
+                            <label class="form-check-label" for="Herencia-familiar">Riesgo por Herencia familiar</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Diabetes">
+                            <label class="form-check-label" for="Diabetes">Diabetes</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Renal">
+                            <label class="form-check-label" for="Renal">Problemas renal</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Cefalea">
+                            <label class="form-check-label" for="Cefalea">Cefalea (dolor de cabeza)</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Obesidad">
+                            <label class="form-check-label" for="Obesidad">Obesidad</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Sedentarismo">
+                            <label class="form-check-label" for="Sedentarismo">Inactividad y vida sedentaria</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Tabaco">
+                            <label class="form-check-label" for="Tabaco">Tabaco</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Alcohol">
+                            <label class="form-check-label" for="Alcohol">Alcohol</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Estrés">
+                            <label class="form-check-label" for="Estrés">Estrés</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="Medicamentos">
+                            <label class="form-check-label" for="Medicamentos">Tomo Medicamentos</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="infartos">
+                            <label class="form-check-label mb-3" for="infartos">Ya he tenido infartos</label>
+                        </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Conocer Resultados
+  </button>
+                    </form>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Resultados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>
+                <h3>  Tu presion es:   </h3>
+                <h1>Normal-Alta</h1>
+                <h5>Debes cuidarte mas! Consulta un medico disponible.</h5>
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                </div>
+            </article>
+            <article>
+                <img src="img/storytelling.png " alt="Storytelling " class="m-0 p-0 container-fluid ">
+            </article>
+        </section>
+    </main>
+
+<footer class=" mt-0 p-5">
+    <div>
+        <h3 text>Doctores en linea</h3>
+        <img src="img/garcia.png" alt="Doctor en linea">
+        <img src="img/guillin.png"alt="Doctor en linea">
+        <img src="img/romano.png"alt="Doctor en linea">
+    </div>
+    <div>
+        <div class="container-fluid mx-auto container mt-2">
+            <h6>Nuestras redes</h6>
+            <a href="#" class=""><img src="img/instagram.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"> </a>
+            <a href="#" class=""><img src="img/twitter.png" class="redes"data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></a>
+            <a href="#" class=""><img src="img/facebook.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></a>
+        </div>
+    </div>
+  </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
+    <!--animacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
