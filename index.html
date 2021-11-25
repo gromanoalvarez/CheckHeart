@@ -41,10 +41,34 @@
 
 <body class="fondo" id="inicio">
     <header>
+        <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
+        <!--Asegura la accesibilidad mediante el uso de un <nav>
+            encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
+        <nav class="navbar navbar-center navbar-dark color-menu navbar-expand-md ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="index.html">
+                            <!-- Logo -->
+                            <div data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+                                <a href="index.html"><img src="img/logo.png" style="width: 50px; height: 50px;" id="logo" class="d-block mx-auto img-fluid" alt="Home">
+                            </div>
+                            </a>
+                            <a class="nav-link " href="vida-saludable.html">Vida saludable</a>
+                            <a class="nav-link " href="emergencias.html">Emergencias</a>
+                            <a class="nav-link" href="iniciar-sesion.html">Cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <!-- menu de idioma -->
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="Idiomas">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
                         <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
                     </svg>
             </button>
@@ -54,35 +78,12 @@
                 <li><a class="dropdown-item" href="error.html">Portugues</a></li>
             </ul>
         </div>
-
-        <!-- Logo -->
-        <div data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
-            <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
-        </div>
-        <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
     </header>
 
     <main class=" mb-0 pb-0">
-        <!--Asegura la accesibilidad mediante el uso de un <nav>
-            encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
-            <nav class="navbar navbar-center navbar-dark color-menu navbar-expand-md ">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="index.html">Home</a>
-                        <a class="nav-link " href="vida-saludable.html">Vida saludable</a>
-                        <a class="nav-link " href="emergencias.html">Emergencias</a>
-                        <a class="nav-link" href="iniciar-sesion.html">Cuenta</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
 
-        <div class="container-fluid "><!-- ADDED W3 CENTER-->
+        <div class="container-fluid ">
+            <!-- ADDED W3 CENTER-->
             <div class="container py-5  ">
                 <div class="row  row d-flex justify-content-center">
                     <div class="col-md-6">
@@ -108,7 +109,7 @@
                 </div>
 
 
-                <div class="row py-5 row d-flex justify-content-center" id="segunda-img" >
+                <div class="row py-5 row d-flex justify-content-center" id="segunda-img">
                     <!--segunda imagen-->
                     <div class="col-md-auto">
                         <div class="card text-center border-0">
@@ -191,7 +192,7 @@
         <div class="container-fluid final m-0 p-0">
             <h1 class="text-dark text-center fw-bolder mt-5 p-5">Consejos diarios de especialistas</h1>
             <!--Imagenes con propiedad ALT, descriptivas-->
-            <div data-aos="zoom-in">
+            <div>
                 <img src="img/consejos.png " id="consejos" alt="Consejo" class="d-block mx-auto img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Consejo como tomar la presion">
             </div>
             <p class="text-center ">
@@ -217,18 +218,18 @@
         <div>
             <h3 text>Doctores en linea</h3>
             <img src="img/garcia.png" alt="Doctor en linea">
-            <img src="img/guillin.png"alt="Doctor en linea">
-            <img src="img/romano.png"alt="Doctor en linea">
+            <img src="img/guillin.png" alt="Doctor en linea">
+            <img src="img/romano.png" alt="Doctor en linea">
         </div>
         <div>
             <div class="container-fluid mx-auto container mt-2">
                 <h6>Nuestras redes</h6>
                 <a href="#" class=""><img src="img/instagram.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"> </a>
-                <a href="#" class=""><img src="img/twitter.png" class="redes"data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></a>
+                <a href="#" class=""><img src="img/twitter.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></a>
                 <a href="#" class=""><img src="img/facebook.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></a>
             </div>
         </div>
-      </footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous "></script>
