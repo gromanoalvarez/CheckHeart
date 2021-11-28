@@ -12,6 +12,7 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80%;
     margin: 0 auto;
+    background-color: #308CB5;
 }
 
 body {
@@ -156,6 +157,8 @@ h1 {
 h2 {
     color: black;
 }
+
+
 /*
 p {
     padding: 20px;
@@ -163,6 +166,8 @@ p {
     color: black;
 }
 */
+
+
 /*
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
@@ -170,6 +175,7 @@ p {
     }
 }
 */
+
 
 /* Dropdown Button */
 
@@ -262,6 +268,8 @@ footer {
 * {
     box-sizing: border-box;
 }
+
+
 /*
 body {
     background-color: #f1f1f1;
@@ -344,7 +352,8 @@ button:hover {
 .step.finish {
     background-color: #04AA6D;
 }
-.redes{
+
+.redes {
     padding-top: 1%;
     width: 50px;
 }
