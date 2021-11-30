@@ -10,7 +10,7 @@ html {
 
 header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -24,9 +24,11 @@ main {
     margin: auto;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-color: #6ab5d8;
+    letter-spacing: 6px;
 }
+
 .recortar {
     width: 230px;
     height: 300px;
@@ -38,7 +40,7 @@ nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: large;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     text-align: center;
     justify-content: space-around;
 }
@@ -77,13 +79,26 @@ ul {
     text-align: center;
 }
 
-
-/* fin del menu */
-
-.color-menu {
-    /* color del menu */
-    /* background-color: #61B47E;*/
+.menu-nav {
     background-color: #308CB5;
+    max-width: 100%;
+    margin: 0;
+}
+
+.nav-desplegable {
+    max-width: 50%;
+}
+
+.navbar-toggler {
+    margin-right: 50%;
+    border: 0;
+    color: #fff;
+    font-size: x-large;
+}
+
+.navbar-toggler:hover {
+    background-color: #6ab5d8;
+    border: 0;
 }
 
 aside {
@@ -104,7 +119,13 @@ aside {
 }
 
 #logo {
-    width: 300px;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 10%;
+}
+
+.logo {
+    margin-left: 0.5em;
 }
 
 #iconos {
@@ -187,10 +208,20 @@ p {
 
 .dropdown {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    right: 0.5em;
+    top: 0.5em;
     display: flex;
     justify-content: flex-start;
+}
+
+.dropdown-toggle {
+    background-color: #308CB5;
+    border: 0;
+}
+
+.dropdown-toggle:hover {
+    background-color: #6ab5d86e;
+    border: 0;
 }
 
 
@@ -258,11 +289,11 @@ footer {
     margin: 0px;
 }
 
-.final-error{
+.final-error {
     background-color: #939e9b;
 }
 
-.redes{
+.redes {
     padding-top: 1%;
     width: 50px;
 }
