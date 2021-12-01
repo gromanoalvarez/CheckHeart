@@ -296,4 +296,9 @@ footer {
 .redes {
     padding-top: 1%;
     width: 50px;
+    border-radius: 50%;
+}
+
+.interlineado:hover {
+    letter-spacing: 1px;
 }
