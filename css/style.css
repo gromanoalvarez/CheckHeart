@@ -80,7 +80,7 @@ ul {
 }
 
 .menu-nav {
-    background-color: #308CB5;
+    background-color: #000;
     max-width: 100%;
     margin: 0;
 }
@@ -215,7 +215,7 @@ p {
 }
 
 .dropdown-toggle {
-    background-color: #308CB5;
+    background-color: #000;
     border: 0;
 }
 
@@ -250,7 +250,7 @@ p {
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 
@@ -269,7 +269,7 @@ p {
 
 .final {
     background: rgb(184, 219, 209);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, #D4E9E3 100%);
+    background: linear-gradient(0deg, rgb(184, 219, 209) 0%, #fff 100%);
 }
 
 .regresar {
@@ -281,7 +281,8 @@ p {
 }
 
 footer {
-    background-color: rgb(200, 204, 240);
+    background-color: #000;
+    color: #fff;
     padding: 1rem;
     text-align: center;
     width: 100%;
@@ -299,6 +300,23 @@ footer {
     border-radius: 50%;
 }
 
-.interlineado:hover {
+.interlineado {
     letter-spacing: 1px;
+    color: #fff;
+}
+
+.interlineado:hover {
+    color: #45806f;
+}
+
+.intermedio {
+    background-image: linear-gradient(to right bottom, #ffffff, #d6fff3, #6B807A, #d6fff3, #fff);
+}
+
+.icon-footer {
+    color: #fff;
+}
+
+.icon-footer:hover {
+    color: #45806f;
 }

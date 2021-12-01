@@ -5,7 +5,7 @@
 }
 
 .p-3 {
-    border: solid 1px slategray;
+    border: solid 1px #6B807A;
     -webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
     -moz-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
     box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
