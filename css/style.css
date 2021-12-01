@@ -24,9 +24,10 @@ main {
     margin: auto;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-color: #6ab5d8;
 }
+
 .recortar {
     width: 230px;
     height: 300px;
@@ -258,11 +259,16 @@ footer {
     margin: 0px;
 }
 
-.final-error{
+.final-error {
     background-color: #939e9b;
 }
 
-.redes{
+.redes {
     padding-top: 1%;
     width: 50px;
+    border-radius: 50%;
+}
+
+.interlineado:hover {
+    letter-spacing: 1px;
 }
