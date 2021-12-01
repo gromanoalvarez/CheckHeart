@@ -30,6 +30,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!--font tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <!--ESTILOS -->
     <link href="css/style-emergencias.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -88,7 +92,7 @@
                         <div class="card text-left border-0">
                             <div class="card-block p-3">
                                 <h1 class="text-dark text-center fw-bolder mt-5 p-5">Bienvenido a Check Heart</h1>
-                                <p id="texto-venta">Check Heart es una herramienta para el registro de tensión arterial, te permitirá compartir tu estado de salud, hacer videollamadas, chatear con tu médico y participar del foro junto con otros pacientes...
+                                <p id="texto-venta">Check Heart es una herramienta para el registro de tensión arterial, te permitirá compartir tu estado de salud, <span class="text-muted">hacer videollamadas, chatear con tu médico y participar del foro junto con otros pacientes. </span>
                                     <a href="#segunda-img">Saber más</a>
                                 </p>
                             </div>
@@ -119,8 +123,10 @@
                     <div class="col-md-6">
                         <div class="card text-left border-0">
                             <div class="card-block p-3">
-                                <h1 class="text-dark text-center fw-bolder mt-5 p-5">Vida saludable</h1>
-                                <p id="texto-venta">En la sección Vida Saludable encontrarás consejos e información para tener una vida plena, además encontrarás respuestas a las siguientes dudas: ¿Qué es la hipertención? ¿Cuáles son los factores...<a href="vida-saludable.html">Saber más</a></p>
+                                <h1 class="text-dark text-center fw-bolder mt-5 p-5">Vida Saludable</h1>
+                                <p id="texto-venta">En la sección Vida Saludable encontrarás consejos e información para tener una vida plena, <span class="text-muted">además encontrarás respuestas a las siguientes dudas: ¿Qué es la hipertención? ¿Cuáles son los factores.</span>
+                                    <a href="vida-saludable.html">Saber más</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -148,7 +154,7 @@
                                     <img src="img/clock.png" alt="Tome sus registros a tiempo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tome sus registros a tiempo">
                                 </div>
                                 <h4>Tome sus registros a tiempo</h4>
-                                <p>Sus registros serán más presisos, cumpliendo con las recomendaciones de su médico y se representarán de una manera clara de ver</p>
+                                <p>Sus registros serán más presisos, cumpliendo con las recomendaciones de su médico <span class="text-muted"> y se representarán de una manera clara de ver.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
                         </div>
@@ -162,7 +168,7 @@
                                     <img src="img/calendar1.png" alt="Agenda tus turnos medicos" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Agenda tus turnos medicos">
                                 </div>
                                 <h4>Agende sus turnos médicos</h4>
-                                <p>El calendario lo ayudara a registrar sus turnos médicos y la aplicación te enviará un mesaje de texto y email de recordatorio</p>
+                                <p>El calendario lo ayudara a registrar sus turnos médicos y la aplicación te enviará <span class="text-muted">un mesaje de texto y email de recordatorio.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
                         </div>
@@ -176,7 +182,7 @@
                                     <img src="img/cloud-storage.png" alt="Tu medico al lado tuyo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu medico al lado tuyo">
                                 </div>
                                 <h4>Un médico te acompañará</h4>
-                                <p>Podrás compartir los regístros con un médico. Tendrás todos tus registros siempre disponibles para cuando los necesites</p>
+                                <p>Podrás compartir los regístros con un médico. Tendrás todos tus registros <span class="text-muted">siempre disponibles para cuando los necesites.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
                         </div>
@@ -186,27 +192,44 @@
         </div>
 
         <div class="container-fluid final m-0 p-0 pb-5">
-            <h1 class="text-dark text-center fw-bolder mt-5 p-5">Consejos diarios de especialistas</h1>
+            <h1 class="text-dark text-center fw-bolder mt-5 p-5">Consejos Diarios de Especialistas</h1>
             <!--Imagenes con propiedad ALT, descriptivas-->
-            <div>
-                <img src="img/consejos.png" id="consejos" alt="Consejo" class="d-block mx-auto img-fluid p-4" data-bs-toggle="tooltip" data-bs-placement="top" title="Consejo como tomar la presion">
-            </div>
-            <p class="text-center ft-">
-                En la actualidad hay una muy variada gama de aparatos homologados para tomar
-                <br>la TA (tensiómetros) que permiten realizar tomas muy fiables tanto en la consulta como
-                <br>en el propio domicilio, pero para una toma correcta de la TA, es preciso seguir ciertas
-                <br>indicaciones. Dr. Álvarez Agustín.
-                <a href="error.html">Leer más.</a>
-            </p>
+
+            <figure>
+                <blockquote class="blockquote text-center">
+                    <p>En la actualidad hay una muy variada gama de aparatos homologados para tomar
+                        <br>la TA (tensiómetros) que permiten realizar tomas muy fiables tanto en la consulta como
+                        <br>en el propio domicilio, <span class="text-muted">pero para una toma correcta de la TA, es preciso seguir ciertas
+                        <br>indicaciones.</span>
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-center">
+                    <p class="text-center fst-italic fs-4">
+                        Dr. Álvarez Agustín.
+                    </p>
+                    <cite title="Source Title"><a href="error.html">Leer más</a></cite>
+                </figcaption>
+            </figure>
+
             <div class="pt-5 mt-5" data-aos="flip-down">
                 <img src="img/idea.png" id="imagenes" alt="Storytelling: Idea" class="d-block mx-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Idea recomendable">
             </div>
-            <p class="text-center mb-0 ">
-                Si tienes problemas con la sal, en el mercado esta disponible sal dietética
-                <br>muy baja en sodio con arroz deshidratada finamente molida que te ayudara a disfrutar
-                <br>de tus comidas. Dr. Bella Javier.
-                <a href="error.html">Leer más.</a>
-            </p>
+
+            <figure>
+                <blockquote class="blockquote text-center">
+                    <p>
+                        Si tienes problemas con la sal, en el mercado dispones de sal dietética
+                        <br>muy baja en sodio con arroz deshidratada <span class="text-muted">finamente molida que te ayudara a disfrutar
+                        <br>de tus comidas.</span>
+                    </p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-center">
+                    <p class="text-center fst-italic fs-4">
+                        Dr. Bella Javier.
+                    </p>
+                    <cite title="Source Title"><a href="error.html">Leer más</a></cite>
+                </figcaption>
+            </figure>
         </div>
     </main>
 
@@ -216,10 +239,10 @@
                 <div class="col-sm-4 pb-3">
                     <h3 text>Doctores en línea</h3>
                     <div>
-                        <a href="https://mail.google.com/" class="text-decoration-none" target="_blank">
-                            <img class="img-fluid redes" src="img/german.jpg" alt="Doctor en linea" data-bs-toggle="tooltip" data-bs-placement="top" title="Dr. En linea">
-                            <p class="interlineado text-light">Germán Romano Álvarez
-                                <br> romanoalvarezgerman@gmail.com
+                        <img class="img-fluid redes" src="img/german.jpg" alt="Doctor en linea" data-bs-toggle="tooltip" data-bs-placement="top" title="Dr. En linea">
+                        <a href="https://mail.google.com/" class="text-decoration-none interlineado" target="_blank">
+                            <p class=" interlineado">Germán Romano Álvarez
+                                <br>romanoalvarezgerman@gmail.com
                             </p>
                         </a>
                     </div>
@@ -240,13 +263,13 @@
         <div class="col-md-2">
             <div class="row ">
                 <div class="col">
-                    <a href="https://www.instagram.com" target="_blank" class=""><img src="img/instagram.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="interlineado"><img src="img/instagram.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></a>
                 </div>
                 <div class="col">
-                    <a href="https://twitter.com/?lang=es" target="_blank" class=""><img src="img/twitter.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" class="interlineado"><img src="img/twitter.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></a>
                 </div>
                 <div class="col">
-                    <a href="https://es-la.facebook.com/" target="_blank" class=""><img src="img/facebook.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></a>
+                    <a href="https://es-la.facebook.com/" target="_blank" class="interlineado"><img src="img/facebook.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></a>
                 </div>
             </div>
         </div>

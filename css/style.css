@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ header {
 body {
     position: relative;
     min-height: 100vh;
+    font-size: 1.2em;
 }
 
 main {
@@ -169,7 +171,15 @@ aside {
 }
 
 h1 {
-    color: black;
+    font-size: 4em;
+    font-family: 'Abril Fatface', cursive;
+    background: -webkit-linear-gradient(#45806F, #8AFFDE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h4 {
+    font-weight: bolder;
 }
 
 #imagenes {
@@ -182,7 +192,7 @@ h2 {
 }
 
 p {
-    padding: 20px;
+    padding: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
@@ -319,4 +329,9 @@ footer {
 
 .icon-footer:hover {
     color: #45806f;
+}
+
+.btn-success {
+    color: #45806f;
+    background-color: #45806f;
 }
