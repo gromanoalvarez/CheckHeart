@@ -40,10 +40,178 @@
 </head>
 
 <body class="fondo" id="inicio">
+    <header>
+        <!--Asegura la accesibilidad mediante el uso de un <nav>
+            encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
+        <nav class="navbar navbar-expand-md navbar-dark menu-nav">
+            <!-- Logo -->
+            <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
+            <div class="logo" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+                <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
+            </div>
+            <div class="container-fluid nav-desplegable ">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active " href="emergencias.html">Emergencias</a>
+                        <a class="nav-link " href="vida-saludable.html">Vida saludable</a>
+                        <a class="nav-link " href="iniciar-sesion.html">Cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- menu de idioma -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="Idiomas">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+                    </svg>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Español</a></li>
+                <li><a class="dropdown-item" href="error.html">Ingles</a></li>
+                <li><a class="dropdown-item" href="error.html">Portugues</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <main class=" mb-0 pb-0">
+        <div class="container-fluid ">
+            <!-- ADDED W3 CENTER-->
+            <div class="container py-5  ">
+                <div class="row  row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <!--primer texto-->
+                        <div class="card text-left border-0">
+                            <div class="card-block p-3">
+                                <h1 class="text-dark text-center fw-bolder mt-5 p-5">Bienvenido a Check Heart</h1>
+                                <p id="texto-venta">Check Heart es una herramienta para el registro de tension arterial, te permitira compartir tu estado de salud, hacer videollamadas, chatear con tu medico y participar del foro junto con otros pacientes...
+                                    <a href="#segunda-img">saber mas</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <!--primera imagen-->
+                        <div class="card text-center border-0">
+                            <div class="card-block" data-aos="fade-up-left">
+                                <img data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Bienvenido a Check Heart" src="img/thumbsup2.png " alt="Storytelling: Bienvenido a Check Heart" id="web2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row py-5 row d-flex justify-content-center" id="segunda-img">
+                    <!--segunda imagen-->
+                    <div class="col-md-auto">
+                        <div class="card text-center border-0">
+                            <div class="card-block" data-aos="fade-down-right">
+                                <img data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Vida saludable" src="img/fine.png" alt="Storytelling: Vida saludable" id="web2">
+                            </div>
+                        </div>
+                    </div>
+                    <!--segundo texto-->
+                    <div class="col-md-6">
+                        <div class="card text-left border-0">
+                            <div class="card-block p-3">
+                                <h1 class="text-dark text-center fw-bolder mt-5 p-5">Vida saludable</h1>
+                                <p id="texto-venta">En la seccion Vida Saludable encontraras consejos e informacion para tener una vida plena, ademas encontraras respuestas a las siguientes dudas: ¿Que es la hipertencion? ¿Cuales son los factores...<a href="error.html">saber mas</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" regresar text-end">
+                    <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class=" p-2 bi bi-arrow-up-circle " viewBox="0 0 16 16">
+                            <path  fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid bg-secondary">
+            <div class="container py-5">
+                <div class="row">
+
+                    <div class="col-md-4 mt-3 mb-3">
+                        <!--primer cuadro-->
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <div class="py-3" data-aos="flip-up">
+                                    <img src="img/clock.png" alt="Tome sus registros a tiempo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tome sus registros a tiempo">
+                                </div>
+                                <h4>Tome sus registros a tiempo</h4>
+                                <p>sus registros seran mas presisos, cumpliendo con las recomendaciones de su medico y se representaran de una manera clara de ver</p>
+                            </div>
+                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-3 mb-3">
+                        <!--segundo cuadro-->
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <div class="py-3" data-aos="flip-up">
+                                    <img src="img/calendar1.png" alt="Agenda tus turnos medicos" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Agenda tus turnos medicos">
+                                </div>
+                                <h4>Agenda tus turnos medicos</h4>
+                                <p>El calendario te ayudara a registrar tus turnos medicos y para que no te olvides la aplicacion te enviara un mesaje de texto y email de recordatorio</p>
+                            </div>
+                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mt-3 mb-3">
+                        <!--tercer cuadro-->
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <div class="py-3" data-aos="flip-up">
+                                    <img src="img/cloud-storage.png" alt="Tu medico al lado tuyo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu medico al lado tuyo">
+                                </div>
+                                <h4>Tu medico al lado tuyo</h4>
+                                <p>Si lo deseas podras compartir los registros con tu medico, el sistema almacenara todos los datos para que esten disponibles cuando los necesites </p>
+                            </div>
+                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid final m-0 p-0">
+            <h1 class="text-dark text-center fw-bolder mt-5 p-5">Consejos diarios de especialistas</h1>
+            <!--Imagenes con propiedad ALT, descriptivas-->
+            <div>
+                <img src="img/consejos.png " id="consejos" alt="Consejo" class="d-block mx-auto img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Consejo como tomar la presion">
+            </div>
+            <p class="text-center ">
+                En la actualidad hay una muy variada gama de aparatos homologados para tomar
+                <br>la TA (tensiómetros) que permiten realizar tomas muy fiables tanto en la consulta como
+                <br>en el propio domicilio, pero para una toma correcta de la TA, es preciso seguir ciertas
+                <br>indicaciones Dra. Lilina Lazarte MN: 12582.
+                <a href="error.html">Leer más</a>
+            </p>
+            <div class="pt-5 mt-5" data-aos="flip-down">
+                <img src="img/idea.png" id="imagenes" alt="Storytelling: Idea" class="d-block mx-auto" data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Idea recomendable">
+            </div>
+            <p class="text-center mb-0">
+                Si tienes problemas con la sal, en el mercado esta disponible sal dietetica
+                <br>muy baja en sodio con arroz deshidratada finamente molina que te ayudara a disfrutar
+                <br>de tus comidas. Dr. Horacio Latorre MN:10895.
+                <a href="error.html">Leer más</a>
+            </p>
+        </div>
+    </main>
 
     <footer class="m-0 p-3 row ">
-
         <div class="col-10 ">
             <div class="row">
                 <div class="col-sm-4 pb-3">
@@ -82,7 +250,6 @@
                     <a href="https://es-la.facebook.com/" target="_blank" class=""><img src="img/facebook.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></a>
                 </div>
             </div>
-
         </div>
     </footer>
 
