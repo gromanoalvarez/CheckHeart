@@ -50,23 +50,27 @@
             <div class="logo" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
                 <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
             </div>
+
             <div class="container-fluid nav-desplegable ">
                 <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
-                    <span class="navbar-toggler-icon "></span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active " href="emergencias.html">Consultas Emergencias</a>
-                        <a class="nav-link " href="vida-saludable.html">Vida Saludable</a>
-                        <a class="nav-link " href="iniciar-sesion.html">Cuenta Registro</a>
+                        <a class="interlineado text-decoration-none" href="emergencias.html">Consultas Emergencias</a>
+                        <a class="interlineado text-decoration-none ps-5 pe-5" href="vida-saludable.html">Vida Saludable</a>
+                        <a class="interlineado text-decoration-none" href="iniciar-sesion.html">Cuenta Registro</a>
                     </div>
                 </div>
+
             </div>
         </nav>
         <!-- menu de idioma -->
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="Idiomas">
+        <div class="dropdown ">
+            <button class="navbar-toggler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="Idiomas">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
                         <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
                     </svg>
@@ -90,121 +94,120 @@
                 <form class="card w3-center" id="regForm" action="index.html" style="-webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
               -moz-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
               box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);">
-                    <h1>Iniciar sesión:</h1>
+                    <h1>Iniciar sesión</h1>
                     <!-- One "tab" for each step in the form: -->
                     <div class="tab w3-animate-opacity">
                         <div class="w3-row-padding" style="margin:0 -16px;">
-                            <p>
-                                <p class="w3-justify"><label>Usuario:</label>
-                                    <input class="w3-input w3-border " name="first" type="text" placeholder="Usuario" required /></p>
+                            <p class="w3-justify"><label>Usuario:</label>
+                                <input class="w3-input w3-border " name="first" type="text" placeholder="Usuario" required />
+                            </p>
                         </div>
                         <div class="w3-row-padding" style="margin:0 -16px;">
                             <div>
                                 <p class="w3-justify">
-                                    <label>Contraseña</label>
-                                    <input class="w3-input w3-border" type="password" placeholder="Contraseña..."></p>
+                                    <label>Contraseña:</label>
+                                    <input class="w3-input w3-border" type="password" placeholder="Contraseña">
+                                </p>
                             </div>
                         </div>
                         </p>
                     </div>
                     <div style="overflow:auto;">
                         <span class="w3-left"> <a href="#">Olvidaste tu contraseña?</a></span>
-                        <div style="float:right;">
-                            <button type="submit">Ingresar</button>
+                        <div class="mt-4" style="float:right; ">
+                            <button type="submit ">Ingresar</button>
                         </div>
                     </div>
                     <div class="w3-image w3-center w3-container w3-border-top w3-margin">
                         <div class="w3-margin">
-                            <a href="registrarse2.html" class="">              
-                            Crear una nueva cuenta
+                            <a href="registrarse2.html">Crear una nueva cuenta</a>
                         </div>
-                      </a>
-                            <img src="img/googlenormal.png" alt="" style="width: 100%; max-width: 17em; height: auto;" class="w3-margin">
-                        </div>
+                        <img src="img/googlenormal.png" alt="Ingresa cuenta con Google" style="width: 100%; max-width: 17em; height: auto;" class="w3-margin">
+                    </div>
                 </form>
-                </div>
             </div>
-            <script>
-                var currentTab = 0; // Current tab is set to be the first tab (0)
-                showTab(currentTab); // Display the current tab
+        </div>
+        <script>
+            var currentTab = 0; // Current tab is set to be the first tab (0)
+            showTab(currentTab); // Display the current tab
 
-                function showTab(n) {
-                    // This function will display the specified tab of the form...
-                    var x = document.getElementsByClassName("tab");
-                    x[n].style.display = "block";
-                    //... and fix the Previous/Next buttons:
-                    if (n == 0) {
-                        document.getElementById("prevBtn").style.display = "none";
-                    } else {
-                        document.getElementById("prevBtn").style.display = "inline";
-                    }
-                    if (n == (x.length - 1)) {
-                        document.getElementById("nextBtn").innerHTML = "Enviar";
-                    } else {
-                        document.getElementById("nextBtn").innerHTML = "Siguiente";
-                    }
-                    //... and run a function that will display the correct step indicator:
-                    fixStepIndicator(n)
+            function showTab(n) {
+                // This function will display the specified tab of the form...
+                var x = document.getElementsByClassName("tab");
+                x[n].style.display = "block";
+                //... and fix the Previous/Next buttons:
+                if (n == 0) {
+                    document.getElementById("prevBtn").style.display = "none";
+                } else {
+                    document.getElementById("prevBtn").style.display = "inline";
                 }
+                if (n == (x.length - 1)) {
+                    document.getElementById("nextBtn").innerHTML = "Enviar";
+                } else {
+                    document.getElementById("nextBtn").innerHTML = "Siguiente";
+                }
+                //... and run a function that will display the correct step indicator:
+                fixStepIndicator(n)
+            }
 
-                function nextPrev(n) {
-                    // This function will figure out which tab to display
-                    var x = document.getElementsByClassName("tab");
-                    // Exit the function if any field in the current tab is invalid:
-                    if (n == 1 && !validateForm()) return false;
-                    // Hide the current tab:
-                    x[currentTab].style.display = "none";
-                    // Increase or decrease the current tab by 1:
-                    currentTab = currentTab + n;
-                    // if you have reached the end of the form...
-                    if (currentTab >= x.length) {
-                        // ... the form gets submitted:
-                        document.getElementById("regForm").submit();
-                        return false;
-                    }
-                    // Otherwise, display the correct tab:
-                    showTab(currentTab);
+            function nextPrev(n) {
+                // This function will figure out which tab to display
+                var x = document.getElementsByClassName("tab");
+                // Exit the function if any field in the current tab is invalid:
+                if (n == 1 && !validateForm()) return false;
+                // Hide the current tab:
+                x[currentTab].style.display = "none";
+                // Increase or decrease the current tab by 1:
+                currentTab = currentTab + n;
+                // if you have reached the end of the form...
+                if (currentTab >= x.length) {
+                    // ... the form gets submitted:
+                    document.getElementById("regForm").submit();
+                    return false;
                 }
+                // Otherwise, display the correct tab:
+                showTab(currentTab);
+            }
 
-                function validateForm() {
-                    // This function deals with validation of the form fields
-                    var x, y, i, valid = true;
-                    x = document.getElementsByClassName("tab");
-                    y = x[currentTab].getElementsByTagName("input");
-                    // A loop that checks every input field in the current tab:
-                    for (i = 0; i < y.length; i++) {
-                        // If a field is empty...
-                        if (y[i].value == "" && !y[i].classList.contains("norequired")) {
-                            // add an "invalid" class to the field:
-                            y[i].className += " invalid";
-                            // and set the current valid status to false
-                            valid = false;
-                        }
+            function validateForm() {
+                // This function deals with validation of the form fields
+                var x, y, i, valid = true;
+                x = document.getElementsByClassName("tab");
+                y = x[currentTab].getElementsByTagName("input");
+                // A loop that checks every input field in the current tab:
+                for (i = 0; i < y.length; i++) {
+                    // If a field is empty...
+                    if (y[i].value == "" && !y[i].classList.contains("norequired")) {
+                        // add an "invalid" class to the field:
+                        y[i].className += " invalid";
+                        // and set the current valid status to false
+                        valid = false;
                     }
-                    // If the valid status is true, mark the step as finished and valid:
-                    if (valid) {
-                        document.getElementsByClassName("step")[currentTab].className += " finish";
-                    }
-                    return valid; // return the valid status
                 }
+                // If the valid status is true, mark the step as finished and valid:
+                if (valid) {
+                    document.getElementsByClassName("step")[currentTab].className += " finish";
+                }
+                return valid; // return the valid status
+            }
 
-                function fixStepIndicator(n) {
-                    // This function removes the "active" class of all steps...
-                    var i, x = document.getElementsByClassName("step");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].className = x[i].className.replace(" active", "");
-                    }
-                    //... and adds the "active" class on the current step:
-                    x[n].className += " active";
+            function fixStepIndicator(n) {
+                // This function removes the "active" class of all steps...
+                var i, x = document.getElementsByClassName("step");
+                for (i = 0; i < x.length; i++) {
+                    x[i].className = x[i].className.replace(" active", "");
                 }
-            </script>
-            <div class="regresar text-end">
-                <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class=" p-2 bi bi-arrow-up-circle " viewBox="0 0 16 16">
-                    <path  fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                </svg>
-                </a>
-            </div>
+                //... and adds the "active" class on the current step:
+                x[n].className += " active";
+            }
+        </script>
+        <div class="text-end">
+            <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
+                <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-arrow-up-circle regresar" viewBox="0 0 16 16">
+                            <path  fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                        </svg>
+            </a>
+        </div>
     </main>
 
     <footer class="m-0 p-4 row ">
@@ -213,10 +216,10 @@
                 <div class="col-sm-4 pb-3">
                     <h3 text>Doctores en línea</h3>
                     <div>
-                        <a href="https://mail.google.com/" class="text-decoration-none" target="_blank">
-                            <img class="img-fluid redes" src="img/german.jpg" alt="Doctor en linea" data-bs-toggle="tooltip" data-bs-placement="top" title="Dr. En linea">
-                            <p class="interlineado text-light">Germán Romano Álvarez
-                                <br> romanoalvarezgerman@gmail.com
+                        <img class="img-fluid redes" src="img/german.jpg" alt="Doctor en linea" data-bs-toggle="tooltip" data-bs-placement="top" title="Dr. En linea">
+                        <a href="https://mail.google.com/" class="text-decoration-none interlineado" target="_blank">
+                            <p class="interlineado ">Germán Romano Álvarez
+                                <spam class="text-wrap"> romanoalvarezgerman@gmail.com</spam>
                             </p>
                         </a>
                     </div>
@@ -227,7 +230,7 @@
                     <ul class="text-start lh-lg">
                         <li><a href="README.md" class="text-decoration-none interlineado" target="_blank">Acerca de CheckHeart</a></li>
                         <li><a href="LICENSE" class="text-decoration-none interlineado" target="_blank">Privacidad en CheckHeart</a></li>
-                        <li><a href="https://www.linkedin.com/in/gerromano/" class="text-decoration-none interlineado" target="_blank">Ponte en contacto con CheckHeart</a></li>
+                        <li><a href="https://www.linkedin.com/in/gerromano/" class="text-decoration-none interlineado" target="_blank">Contactar con CheckHeart</a></li>
                         <li><small>Copyright © GermánRomanoÁlvarez 2021</small></li>
                     </ul>
                 </div>
@@ -237,13 +240,25 @@
         <div class="col-md-2">
             <div class="row ">
                 <div class="col">
-                    <a href="https://www.instagram.com" target="_blank" class=""><img src="img/instagram.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram"></a>
+                    <a href="https://www.instagram.com" target="_blank" class="interlineado" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="col">
-                    <a href="https://twitter.com/?lang=es" target="_blank" class=""><img src="img/twitter.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></a>
+                    <a href="https://es-la.facebook.com/" target="_blank" class="interlineado" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="col">
-                    <a href="https://es-la.facebook.com/" target="_blank" class=""><img src="img/facebook.png" class="redes" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank" class="interlineado" data-bs-toggle="tooltip" data-bs-placement="top" title="twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

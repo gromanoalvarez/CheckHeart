@@ -26,11 +26,6 @@ main {
     margin: auto;
 }
 
-.nav-link:hover {
-    background-color: #6ab5d8;
-    letter-spacing: 6px;
-}
-
 .recortar {
     width: 230px;
     height: 300px;
@@ -47,6 +42,11 @@ nav {
     justify-content: space-around;
 }
 
+.nav-link:hover {
+    color: #fff;
+    font-weight: bolder;
+}
+
 ul {
     list-style: none;
     display: inline-block;
@@ -56,7 +56,7 @@ ul {
 /*menu de internet*/
 
 #menu li a {
-    color: rgb(38, 41, 39);
+    color: #45806F;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -64,7 +64,7 @@ ul {
 }
 
 #menu li p {
-    color: rgb(38, 41, 39);
+    color: #45806F;
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -72,7 +72,7 @@ ul {
 }
 
 #menu li a:hover {
-    color: green;
+    color: #45806F;
     text-decoration: underline;
 }
 
@@ -92,14 +92,16 @@ ul {
 }
 
 .navbar-toggler {
-    margin-right: 50%;
+    margin-right: 40%;
     border: 0;
     color: #fff;
     font-size: x-large;
+    font-weight: bolder;
 }
 
 .navbar-toggler:hover {
-    background-color: #6ab5d8;
+    background: #000;
+    color: #45806F;
     border: 0;
 }
 
@@ -162,7 +164,7 @@ aside {
 }
 
 #texto-venta {
-    color: black;
+    color: #000;
 }
 
 #consejos {
@@ -171,7 +173,7 @@ aside {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 2em;
     font-family: 'Abril Fatface', cursive;
     background: -webkit-linear-gradient(#45806F, #8AFFDE);
     -webkit-background-clip: text;
@@ -188,13 +190,13 @@ h4 {
 }
 
 h2 {
-    color: black;
+    color: #000;
 }
 
 p {
     padding: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    color: #000;
 }
 
 @media (min-width: 768px) {
@@ -207,7 +209,7 @@ p {
 /* Dropdown Button */
 
 .dropbtn {
-    color: black;
+    color: #000;
     padding: 10px;
     font-size: 12px;
     border: none;
@@ -230,8 +232,10 @@ p {
 }
 
 .dropdown-toggle:hover {
-    background-color: #6ab5d86e;
+    color: #45806F;
+    background-color: #000;
     border: 0;
+    font-weight: bolder;
 }
 
 
@@ -240,7 +244,7 @@ p {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -250,7 +254,7 @@ p {
 /* Links inside the dropdown */
 
 .dropdown-content a {
-    color: black;
+    color: #000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -274,7 +278,7 @@ p {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #45806F;
 }
 
 .final {
@@ -288,6 +292,10 @@ p {
     bottom: 10px;
     right: 10px;
     z-index: 100;
+}
+
+.regresar:hover {
+    color: #45806F;
 }
 
 footer {
