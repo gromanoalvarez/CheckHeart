@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-.p-3 {
+.box-dg {
+    padding: 1em;
+    margin: 1em;
     -webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
     -moz-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
     box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
     background: rgb(184, 219, 209);
-    background: linear-gradient(180deg, rgba(184, 219, 209, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(184, 219, 209, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .contenedor {

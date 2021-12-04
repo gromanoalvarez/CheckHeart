@@ -47,7 +47,7 @@
     <header>
         <!--Asegura la accesibilidad mediante el uso de un <nav>
             encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
-        <nav class="navbar navbar-expand-md navbar-dark menu-nav">
+        <nav class="navbar navbar-expand-md navbar-dark menu-nav font-monospace">
             <!-- Logo -->
             <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
             <div class="logo" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
@@ -94,10 +94,16 @@
                     <div class="col-md-6">
                         <!--primer texto-->
                         <div class="card text-left border-0">
-                            <div class="card-block p-3">
+                            <div class="card-block box-dg">
                                 <h1 class="text-dark text-center fw-bolder mt-5 p-5">Bienvenido a Check Heart</h1>
                                 <p id="texto-venta">Check Heart es una herramienta para el registro de tensión arterial, te permitirá compartir tu estado de salud, <span class="text-muted">hacer videollamadas, chatear con tu médico y participar del foro junto con otros pacientes. </span>
-                                    <a href="#segunda-img">Saber más</a>
+                                    <br>
+                                    <br>
+                                    <a href="#segunda-img" class=" text-decoration-none">Saber más 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -107,7 +113,7 @@
                         <!--primera imagen-->
                         <div class="card text-center border-0">
                             <div class="card-block" data-aos="fade-up-left">
-                                <img data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Bienvenido a Check Heart" src="img/thumbsup2.png " alt="Storytelling: Bienvenido a Check Heart" id="web2">
+                                <img class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Bienvenido a Check Heart" src="img/thumbsup2.png " alt="Storytelling: Bienvenido a Check Heart" id="web2">
                             </div>
                         </div>
                     </div>
@@ -126,10 +132,16 @@
                     <!--segundo texto-->
                     <div class="col-md-6">
                         <div class="card text-left border-0">
-                            <div class="card-block p-3">
+                            <div class="card-block box-dg">
                                 <h1 class="text-dark text-center fw-bolder mt-5 p-5">Vida Saludable</h1>
                                 <p id="texto-venta">En la sección Vida Saludable encontrarás consejos e información para tener una vida plena, <span class="text-muted">además encontrarás respuestas a las siguientes dudas: ¿Qué es la hipertención? ¿Cuáles son los factores.</span>
-                                    <a href="vida-saludable.html">Saber más</a>
+                                    <br>
+                                    <br>
+                                    <a href="#segunda-img" class=" text-decoration-none">Saber más 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -138,8 +150,8 @@
 
                 <div class="text-end">
                     <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-arrow-up-circle regresar" viewBox="0 0 16 16">
-                            <path  fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-chevron-up regresar" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                         </svg>
                     </a>
                 </div>
@@ -157,10 +169,14 @@
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/clock.png" alt="Tome sus registros a tiempo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tome sus registros a tiempo">
                                 </div>
-                                <h4>Tome sus registros a tiempo</h4>
-                                <p>Sus registros serán más presisos, cumpliendo con las recomendaciones de su médico <span class="text-muted"> y se representarán de una manera clara de ver.</span></p>
+                                <h4 class="text-uppercase">Tome sus registros a tiempo</h4>
+                                <p>Sus registros serán más precisos, cumpliendo con las recomendaciones de su médico <span class="text-muted"> y se representarán de una manera clara de ver.</span></p>
                             </div>
-                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
+                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
@@ -171,10 +187,14 @@
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/calendar1.png" alt="Agenda tus turnos medicos" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Agenda tus turnos medicos">
                                 </div>
-                                <h4>Agende sus turnos médicos</h4>
-                                <p>El calendario lo ayudara a registrar sus turnos médicos y la aplicación te enviará <span class="text-muted">un mesaje de texto y email de recordatorio.</span></p>
+                                <h4 class="text-uppercase">Agende sus turnos médicos</h4>
+                                <p>El calendario lo ayudará a registrar sus turnos médicos y la aplicación te enviará <span class="text-muted">un mesaje de texto y email de recordatorio.</span></p>
                             </div>
-                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
+                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
@@ -185,10 +205,14 @@
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/cloud-storage.png" alt="Tu medico al lado tuyo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu medico al lado tuyo">
                                 </div>
-                                <h4>Un médico te acompañará</h4>
+                                <h4 class="text-uppercase">Un médico te acompañará</h4>
                                 <p>Podrás compartir los regístros con un médico. Tendrás todos tus registros <span class="text-muted">siempre disponibles para cuando los necesites.</span></p>
                             </div>
-                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-black">Ver más</a>
+                            <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -201,17 +225,18 @@
 
             <figure>
                 <blockquote class="blockquote text-center">
-                    <p>En la actualidad hay una muy variada gama de aparatos homologados para tomar
-                        <br>la TA (tensiómetros) que permiten realizar tomas muy fiables tanto en la consulta como
-                        <br>en el propio domicilio, <span class="text-muted">pero para una toma correcta de la TA, es preciso seguir ciertas
-                        <br>indicaciones.</span>
+                    <p>En la actualidad hay una muy variada gama de aparatos homologados para tomar la TA (tensiómetros) que permiten realizar tomas muy fiables tanto en la consulta como en el propio domicilio, <span class="text-muted">pero para una toma correcta de la TA, es preciso seguir ciertas
+                        indicaciones.</span>
                     </p>
                 </blockquote>
-                <figcaption class="blockquote-footer text-center">
-                    <p class="text-center fst-italic fs-4">
-                        Dr. Álvarez Agustín.
-                    </p>
-                    <cite title="Source Title"><a href="emergencias.html#video">Leer más</a></cite>
+                <figcaption class="blockquote-footer text-end">
+                    Dr. Álvarez Agustín.
+                    <br><br>
+                    <cite title="Source Title"><a href="emergencias.html#video" class="text-decoration-none ">Más info.
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a></cite>
                 </figcaption>
             </figure>
 
@@ -222,22 +247,24 @@
             <figure>
                 <blockquote class="blockquote text-center">
                     <p>
-                        Si tienes problemas con la sal, en el mercado dispones de sal dietética
-                        <br>muy baja en sodio con arroz deshidratada <span class="text-muted">finamente molida que te ayudara a disfrutar
-                        <br>de tus comidas.</span>
+                        Si tienes problemas con la sal, en el mercado dispones de sal dietética muy baja en sodio con arroz deshidratada <span class="text-muted">finamente molida que te ayudará a disfrutar
+                        de tus comidas.</span>
                     </p>
                 </blockquote>
-                <figcaption class="blockquote-footer text-center">
-                    <p class="text-center fst-italic fs-4">
-                        Dr. Bella Javier.
-                    </p>
-                    <cite title="Source Title"><a href="#">Leer más</a></cite>
+                <figcaption class="blockquote-footer text-end">
+                    Dr. Bella Javier.
+                    <br><br>
+                    <cite title="Source Title"><a href="#" class="text-decoration-none ">Más info.
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </a></cite>
                 </figcaption>
             </figure>
         </div>
     </main>
 
-    <footer class="m-0 p-4 row ">
+    <footer class="m-0 p-4 row font-monospace">
         <div class="col-10 ">
             <div class="row">
                 <div class="col-sm-4 pb-3">
@@ -245,8 +272,7 @@
                     <div>
                         <img class="img-fluid redes" src="img/german.jpg" alt="Doctor en linea" data-bs-toggle="tooltip" data-bs-placement="top" title="Dr. En linea">
                         <a href="https://mail.google.com/" class="text-decoration-none interlineado" target="_blank">
-                            <p class="interlineado ">Germán Romano Álvarez
-                                <spam class="text-wrap"> romanoalvarezgerman@gmail.com</spam>
+                            <p class="interlineado font-monospace">Germán Romano Álvarez
                             </p>
                         </a>
                     </div>
