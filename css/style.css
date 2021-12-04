@@ -174,13 +174,28 @@ aside {
     height: 400px;
 }
 
+.box-dg {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    -webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
+    -moz-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
+    box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
+    background: rgb(184, 219, 209);
+    background: linear-gradient(0deg, rgba(184, 219, 209, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
 h1 {
-    font-size: 2em;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
     background: -webkit-linear-gradient(#45806F, #8AFFDE);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 h4 {
@@ -205,6 +220,7 @@ p {
     padding: 1em;
     font-family: 'Roboto', sans-serif;
     color: #000;
+    vertical-align: inherit;
 }
 
 @media (min-width: 768px) {
