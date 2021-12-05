@@ -276,12 +276,13 @@ body {
 }*/
 
 #regForm {
-    background-color: #ffffff;
     background-color: #f1f1f1;
-    margin: 100px auto;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     /*font-family: Raleway;*/
-    padding: 40px;
-    width: 70%;
+    padding: 1em;
+    max-width: 90%;
 }
 
 h1 {

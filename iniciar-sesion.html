@@ -44,43 +44,31 @@
     <header>
         <!--Asegura la accesibilidad mediante el uso de un <nav>
             encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
-        <nav class="navbar navbar-expand-md navbar-dark menu-nav">
+        <nav class="navbar navbar-expand-sm navbar-dark menu-nav font-monospace">
             <!-- Logo -->
             <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
-            <div class="logo" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+            <div class="logo me-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
                 <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
             </div>
 
-            <div class="container-fluid nav-desplegable ">
-                <a class="navbar-brand" href="#"></a>
+            <div class="nav-desplegable">
+
+                <a class="navbar-brand d-none" href="#"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="interlineado text-decoration-none" href="emergencias.html">Consultas Emergencias</a>
-                        <a class="interlineado text-decoration-none ps-5 pe-5" href="vida-saludable.html">Vida Saludable</a>
-                        <a class="interlineado text-decoration-none" href="iniciar-sesion.html">Cuenta Registro</a>
+                    <div class="navbar-nav text-start">
+                        <a class="interlineado text-decoration-none me-sm-4" href="emergencias.html">Consultas y Emergencias</a>
+                        <a class="interlineado text-decoration-none me-sm-4" href="vida-saludable.html">Una Vida Saludable</a>
+                        <a class="interlineado text-decoration-none" href="iniciar-sesion.html">Cuenta y Registro</a>
                     </div>
                 </div>
 
             </div>
         </nav>
-        <!-- menu de idioma -->
-        <div class="dropdown ">
-            <button class="navbar-toggler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="top" title="Idiomas">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
-                        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
-                    </svg>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Español</a></li>
-                <li><a class="dropdown-item" href="error.html">Inglés</a></li>
-                <li><a class="dropdown-item" href="error.html">Portugués</a></li>
-            </ul>
-        </div>
     </header>
 
     <main>
@@ -90,30 +78,25 @@
                     <img src="img/fine.png" alt="guy" style="width: 26em;" data-bs-toggle="tooltip" data-bs-placement="top" title="Storytelling: Inicia sesion aqui">
                 </div>
             </div>
-            <div class="w3-container w3-threequarter w3-animate-right">
-                <form class="card w3-center" id="regForm" action="index.html" style="-webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
+            <div>
+                <form class="card  m-3 mt-5 my-5" id="regForm" action="index.html" style="-webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
               -moz-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
               box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);">
-                    <h1>Iniciar sesión</h1>
+                    <h1 class="fw-bolder">Iniciar sesión</h1>
                     <!-- One "tab" for each step in the form: -->
                     <div class="tab w3-animate-opacity">
-                        <div class="w3-row-padding" style="margin:0 -16px;">
-                            <p class="w3-justify"><label>Usuario:</label>
-                                <input class="w3-input w3-border " name="first" type="text" placeholder="Usuario" required />
-                            </p>
+                        <div class="w3-row-padding my-3">
+                            <input class="w3-input w3-border " name="first" type="text" placeholder="Usuario" required />
                         </div>
-                        <div class="w3-row-padding" style="margin:0 -16px;">
+                        <div class="w3-row-padding">
                             <div>
-                                <p class="w3-justify">
-                                    <label>Contraseña:</label>
-                                    <input class="w3-input w3-border" type="password" placeholder="Contraseña">
-                                </p>
+                                <input class="w3-input w3-border" type="password" placeholder="Contraseña">
                             </div>
                         </div>
                         </p>
                     </div>
                     <div style="overflow:auto;">
-                        <span class="w3-left"> <a href="#">Olvidaste tu contraseña?</a></span>
+                        <span class="w3-left"><a href="#">Olvidaste tu contraseña?</a></span>
                         <div class="mt-4" style="float:right; ">
                             <button type="submit ">Ingresar</button>
                         </div>
@@ -122,7 +105,8 @@
                         <div class="w3-margin">
                             <a href="registrarse2.html">Crear una nueva cuenta</a>
                         </div>
-                        <img src="img/googlenormal.png" alt="Ingresa cuenta con Google" style="width: 100%; max-width: 17em; height: auto;" class="w3-margin">
+                        <a href="error.html"><img src="img/googlenormal.png" alt="Ingresa cuenta con Google" style="width: 100%; max-width: 17em; height: auto;" class="w3-margin">
+                        </a>
                     </div>
                 </form>
             </div>
@@ -203,14 +187,14 @@
         </script>
         <div class="text-end">
             <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
-                <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-arrow-up-circle regresar" viewBox="0 0 16 16">
-                            <path  fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                        </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-chevron-up regresar" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                    </svg>
             </a>
         </div>
     </main>
 
-    <footer class="m-0 p-4 row ">
+    <footer class="m-0 p-4 row font-monospace">
         <div class="col-10 ">
             <div class="row">
                 <div class="col-sm-4 pb-3">
@@ -219,7 +203,6 @@
                         <img class="img-fluid redes" src="img/german.jpg" alt="Doctor en linea" data-bs-toggle="tooltip" data-bs-placement="top" title="Dr. En linea">
                         <a href="https://mail.google.com/" class="text-decoration-none interlineado" target="_blank">
                             <p class="interlineado ">Germán Romano Álvarez
-                                <spam class="text-wrap"> romanoalvarezgerman@gmail.com</spam>
                             </p>
                         </a>
                     </div>

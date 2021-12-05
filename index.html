@@ -47,25 +47,26 @@
     <header>
         <!--Asegura la accesibilidad mediante el uso de un <nav>
             encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
-        <nav class="navbar navbar-expand-md navbar-dark menu-nav font-monospace">
+        <nav class="navbar navbar-expand-sm navbar-dark menu-nav font-monospace">
             <!-- Logo -->
             <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
-            <div class="logo" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+            <div class="logo me-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
                 <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
             </div>
 
-            <div class="container-fluid nav-desplegable ">
-                <a class="navbar-brand" href="#"></a>
+            <div class="nav-desplegable">
+
+                <a class="navbar-brand d-none" href="#"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="interlineado text-decoration-none" href="emergencias.html">Consultas Emergencias</a>
-                        <a class="interlineado text-decoration-none ps-5 pe-5" href="vida-saludable.html">Vida Saludable</a>
-                        <a class="interlineado text-decoration-none" href="iniciar-sesion.html">Cuenta Registro</a>
+                    <div class="navbar-nav text-start">
+                        <a class="interlineado text-decoration-none me-sm-4" href="emergencias.html">Consultas y Emergencias</a>
+                        <a class="interlineado text-decoration-none me-sm-4" href="vida-saludable.html">Una Vida Saludable</a>
+                        <a class="interlineado text-decoration-none" href="iniciar-sesion.html">Cuenta y Registro</a>
                     </div>
                 </div>
 
@@ -119,7 +120,7 @@
                         <div class="card text-left border-0">
                             <div class="card-block box-dg">
                                 <h1 class="text-dark text-center fw-bolder">Vida Saludable</h1>
-                                <p id="texto-venta">En la sección Vida Saludable encontrarás consejos e información para tener una vida plena, <span class="text-muted">además encontrarás respuestas a las siguientes dudas: ¿Qué es la hipertención? ¿Cuáles son los factores.</span>
+                                <p id="texto-venta">En la sección Vida Saludable encontrarás consejos e información para tener una vida plena, <span class="text-muted">además encontrarás respuestas a todas tus dudas.</span>
                                     <br>
                                     <br>
                                     <a href="#segunda-img" class=" text-decoration-none">Saber más 
@@ -151,15 +152,14 @@
             <div class="container py-5">
                 <div class="row">
 
-                    <div class="col-md-4 mt-3 mb-3">
-                        <!--primer cuadro-->
-                        <div class="card text-center">
+                    <div class="col-md-4 mt-3 mb-3 ">
+                        <div class="card text-center ">
                             <div class="card-block">
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/clock.png" alt="Tome sus registros a tiempo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tome sus registros a tiempo">
                                 </div>
                                 <h4 class="text-uppercase">Tome sus registros a tiempo</h4>
-                                <p>Sus registros serán más precisos <span class="text-muted"> y se representarán de una manera clara de ver.</span></p>
+                                <p>Sus registros serán tomados bajo un regimen de control para ser más precisos <span class="text-muted"> y se representarán de una manera clara de ver.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
@@ -169,15 +169,14 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mt-3 mb-3">
-                        <!--segundo cuadro-->
+                    <div class="col-md-4 mt-3 mb-3 h-100">
                         <div class="card text-center">
                             <div class="card-block">
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/calendar1.png" alt="Agenda tus turnos medicos" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Agenda tus turnos medicos">
                                 </div>
                                 <h4 class="text-uppercase">Agende sus turnos médicos</h4>
-                                <p>Te ayudaremos a registrar los turnos y te enviaremos <span class="text-muted">un mesaje de texto o email de recordatorio.</span></p>
+                                <p>Podras comunicarte con doctores y te ayudaremos a registrar los turnos y te enviaremos <span class="text-muted">un mesaje de texto o email de recordatorio.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más 
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
@@ -187,8 +186,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 mt-3 mb-3">
-                        <!--tercer cuadro-->
+                    <div class="col-md-4 mt-3 mb-3 h-100">
                         <div class="card text-center">
                             <div class="card-block">
                                 <div class="py-3" data-aos="flip-up">

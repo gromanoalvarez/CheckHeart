@@ -43,25 +43,26 @@
     <header>
         <!--Asegura la accesibilidad mediante el uso de un <nav>
             encabezado de navegación receptivo de Bootstrap, la barra de navegación. -->
-        <nav class="navbar navbar-expand-md navbar-dark menu-nav">
+        <nav class="navbar navbar-expand-sm navbar-dark menu-nav font-monospace">
             <!-- Logo -->
             <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
-            <div class="logo" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+            <div class="logo me-5" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
                 <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
             </div>
 
-            <div class="container-fluid nav-desplegable ">
-                <a class="navbar-brand" href="#"></a>
+            <div class="nav-desplegable">
+
+                <a class="navbar-brand d-none" href="#"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="interlineado text-decoration-none" href="emergencias.html">Consultas Emergencias</a>
-                        <a class="interlineado text-decoration-none ps-5 pe-5" href="vida-saludable.html">Vida Saludable</a>
-                        <a class="interlineado text-decoration-none" href="iniciar-sesion.html">Cuenta Registro</a>
+                    <div class="navbar-nav text-start">
+                        <a class="interlineado text-decoration-none me-sm-4" href="emergencias.html">Consultas y Emergencias</a>
+                        <a class="interlineado text-decoration-none me-sm-4" href="vida-saludable.html">Una Vida Saludable</a>
+                        <a class="interlineado text-decoration-none" href="iniciar-sesion.html">Cuenta y Registro</a>
                     </div>
                 </div>
 
@@ -88,8 +89,8 @@
 
             <div class="text-end">
                 <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-arrow-up-circle regresar" viewBox="0 0 16 16">
-                        <path  fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-chevron-up regresar" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                     </svg>
                 </a>
             </div>
@@ -164,7 +165,7 @@
 
             <article class="container-fluid final ">
 
-                <div class="container-fluid text-center p-5 ">
+                <div class="container-fluid text-center p-2">
                     <h1 class="fw-bolder ">Hagamos el siguiente Cuestionario para saber como te encuentras hoy </h1>
                 </div>
 
@@ -329,7 +330,7 @@
         </section>
     </main>
 
-    <footer class="m-0 p-4 row ">
+    <footer class="m-0 p-4 row font-monospace ">
         <div class="col-10 ">
             <div class="row">
                 <div class="col-sm-4 pb-3">

@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-aside {
-    float: left;
-    width: 35%;
-    background-color: dimgray;
-}
-
 .contenedor-imagen {
     float: right;
     width: 65%;
@@ -21,33 +15,34 @@ aside {
 
 .preguntas {
     text-decoration: wavy;
+    color: #000;
 }
 
-#resaltar ul li a {
+.preguntas:hover {
     position: relative;
     overflow: hidden;
     display: inline-block;
     text-decoration: none;
-    color: rgb(51, 51, 51);
+    color: #45806F;
 }
 
-#resaltar ul li a:before,
+.preguntas:before,
 a:after {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
+    left: 100%;
     width: 100%;
     height: 2px;
     background: #8AFFDE;
     transition: left .8s;
 }
 
-#resaltar ul li a:hover:before {
+.preguntas:hover:before {
     left: 0;
 }
 
-#resaltar ul li a:after {
+.preguntas:after {
     top: auto;
     bottom: 0;
     left: auto;
@@ -56,14 +51,14 @@ a:after {
     transition: right .8s;
 }
 
-#resaltar ul li a:hover:after {
+.preguntas:hover:after {
     right: 0;
 }
 
 @media screen and (max-width: 480px) {
     header,
     main,
-    aside {
+    {
         width: 100%;
     }
 }
