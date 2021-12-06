@@ -19,7 +19,6 @@ header {
 body {
     position: relative;
     min-height: 100vh;
-    font-size: 1.2em;
 }
 
 main {
@@ -34,14 +33,12 @@ main {
 }
 
 nav {
-    padding: 1%;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: large;
     letter-spacing: 4px;
-    text-align: center;
-    justify-content: space-around;
+    text-align: end;
 }
 
 .nav-link:hover {
@@ -193,6 +190,7 @@ h1 {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-size: xx-large;
 }
 
 h4 {
@@ -200,6 +198,10 @@ h4 {
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+    font-size: x-large;
+    background: -webkit-linear-gradient(#000, #939e9b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #imagenes {
@@ -349,7 +351,7 @@ footer {
 }
 
 .intermedio {
-    background-image: linear-gradient(to right bottom, #ffffff, #d6fff3, #6B807A, #d6fff3, #fff);
+    background-image: linear-gradient(to right bottom, #ffffff, #d6fff3, #8AFFDE, #d6fff3, #fff);
 }
 
 .icon-footer {
@@ -367,4 +369,8 @@ footer {
 
 .card {
     background-color: rgba(255, 255, 255, 0.564);
+}
+
+.navbar {
+    justify-content: space-between;
 }
