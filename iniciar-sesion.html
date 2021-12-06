@@ -32,6 +32,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Oswald:wght@600&family=Roboto:wght@500&family=Smooch&display=swap" rel="stylesheet">
     <!--estilos-->
     <link rel="stylesheet" href="css/style-registrarse.css">
     <link rel="stylesheet" href="css/style.css">
@@ -47,16 +51,22 @@
         <nav class="navbar navbar-expand-md justify-content-md-start navbar-dark menu-nav font-monospace">
             <!-- Logo -->
             <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
-            <div class="logo me-5 col-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
-                <a href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home">
+            <div class="me-4 col-3 col-sm-2 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+                <a href="index.html" class="text-decoration-none interlineado">Check<br>He<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                  </svg>rt 
+                </a>
             </div>
 
-            <div class="nav-desplegable ">
+            <div class="nav-desplegable col-6">
 
                 <a class="navbar-brand d-none" href="#"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
-                    <span class="navbar-toggler-icon"></span>
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                      </svg>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -71,15 +81,15 @@
         </nav>
     </header>
 
-    <main>
-        <div class="w3-row">
+    <main class="m-0">
+        <div class="w3-row ">
             <div class=" w3-quarter">
                 <div class=" w3-hide-small w3-image w3-margin-top w3-right w3-container">
                     <img src="img/fine.png" alt="guy" style="width: 26em;" data-bs-toggle="tooltip" data-bs-placement="top" title="Storytelling: Inicia sesion aqui">
                 </div>
             </div>
-            <div>
-                <form class="card  m-3 mt-5 my-5" id="regForm" action="index.html" style="-webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
+            <div class="">
+                <form class="card box-dg m-3 mt-5 my-5 border-top-0" id="regForm" action="index.html" style="-webkit-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
               -moz-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
               box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);">
                     <h1 class="fw-bolder display-1">Iniciar sesión</h1>
@@ -206,7 +216,7 @@
                         </div>
                         <div class="col-6 col-sm-8 p-0">
                             <a href="https://www.linkedin.com/in/gerromano/" class="text-decoration-none interlineado" target="_blank">
-                                <p class="interlineado p-0 fs-5 font-monospace">Romano Álvarez Germán</p>
+                                <p class="interlineado p-0 fs-6 ">Romano Álvarez Germán</p>
                             </a>
                         </div>
                     </div>
@@ -248,7 +258,7 @@
                 </div>
             </div>
 
-            <small class="mt-3 user-select-all">romanoalvarezgerman@gmail.com</small>
+            <small class="mt-3 user-select-all text-light">romanoalvarezgerman@gmail.com</small>
 
         </div>
 

@@ -50,16 +50,22 @@
         <nav class="navbar navbar-expand-md justify-content-md-start navbar-dark menu-nav font-monospace">
             <!-- Logo -->
             <!-- Las imagenes o storytellings junto a los iconos del cuestionario tienen tooltips para pasar del miro al leo -->
-            <div class="logo me-5 col-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
-                <a class="interlineado" href="index.html"><img src="img/logo.png" id="logo" class="d-block mx-auto img-fluid" alt="Home"></a>
+            <div class="me-4 col-3 col-sm-2 col-lg-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Logotipo: HOME">
+                <a href="index.html" class="text-decoration-none interlineado">Check<br>He<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                  </svg>rt 
+                </a>
             </div>
 
-            <div class="nav-desplegable ">
+            <div class="nav-desplegable col-6">
 
                 <a class="navbar-brand d-none" href="#"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="tooltip" data-bs-placement="top" title="Menu de Navegacion">
-                    <span class="navbar-toggler-icon"></span>
+                     
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                      </svg>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -75,19 +81,19 @@
     </header>
 
     <main class="mt-5 mb-0 pb-0">
-        <div class="container-fluid ">
-            <div class="container py-5  ">
+        <div class="container-fluid box-dg my-0">
+            <div class="container py-0 py-md-5  pt-0">
                 <div class="row d-flex justify-content-center">
 
                     <div class="col-12 col-md-6 p-0">
-                        <div class="text-left border-0">
-                            <div class="card-block box-dg">
+                        <div class="text-start border-0">
+                            <div class="">
                                 <h1 class="text-dark text-center fw-bolder display-2 d-sm-1 mb-3">Bienvenido a Check Heart</h1>
                                 <p id="texto-venta">Check Heart es una herramienta para el registro de tensión arterial, te permitirá compartir tu estado de salud, <span class="text-muted">hacer videollamadas, chatear con tu médico y participar del foro junto con otros pacientes. </span>
                                     <br>
                                     <br>
-                                    <a href="#segunda-img" class=" text-decoration-none">Saber más 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
+                                    <a href="#segunda-img" class="text-decoration-none">Ver más 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                                         </svg>
                                     </a>
@@ -97,32 +103,30 @@
                     </div>
 
                     <div class="col-12 col-md-auto">
-                        <div class="card text-center border-0">
-                            <div class="card-block" data-aos="fade-up-left">
-                                <img class="img-fluid" data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Bienvenido a Check Heart" src="img/thumbsup2.png " alt="Storytelling: Bienvenido a Check Heart" id="web2">
+                        <div class=" text-center border-0">
+                            <div class="" data-aos="fade-up-left">
+                                <img class="d-block mx-auto " data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Bienvenido a Check Heart" src="img/thumbsup2.png" alt="Storytelling: Bienvenido a Check Heart" id="imagenes">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row py-5 row d-flex justify-content-center" id="segunda-img">
-                    <!--segunda imagen-->
+                <div class="row py-0 py-md-5 row d-flex justify-content-center" id="segunda-img">
                     <div class="col-md-auto">
-                        <div class="card text-center border-0">
-                            <div class="card-block" data-aos="fade-down-right">
+                        <div class=" text-center border-0">
+                            <div class="" data-aos="fade-down-right">
                                 <img class=" d-none d-md-block" data-bs-toggle="tooltip" data-bs-placement="top" title="Storyrtelling: Vida saludable" src="img/fine.png" alt="Storytelling: Vida saludable" id="web2">
                             </div>
                         </div>
                     </div>
-                    <!--segundo texto-->
-                    <div class="col-md-6">
+                    <div class="col-md-6 p-0">
                         <div class=" text-left border-0">
-                            <div class="card-block box-dg">
+                            <div class="card-block  my-0">
                                 <h1 class="text-dark text-center fw-bolder display-2 d-sm-1 text-wrap mb-3 p-1">Vida Saludable</h1>
                                 <p id="texto-venta">En la sección Vida Saludable encontrarás consejos e información para tener una vida plena, <span class="text-muted">además encontrarás respuestas a todas tus dudas.</span>
                                     <br>
                                     <br>
-                                    <a href="#segunda-img" class=" text-decoration-none">Saber más 
+                                    <a href="vida-saludable.html" class=" text-decoration-none">Ver más 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right " viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                                         </svg>
@@ -132,15 +136,15 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="text-end">
-                    <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-chevron-up regresar" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-                        </svg>
-                    </a>
-                </div>
             </div>
+        </div>
+
+        <div class="text-end">
+            <a href="#inicio" data-bs-toggle="tooltip" data-bs-placement="top" title="Subir al inicio">
+                <svg xmlns="http://www.w3.org/2000/svg" height="70" width="70" fill="currentColor" class="p-2 bi bi-chevron-up regresar" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                </svg>
+            </a>
         </div>
 
         <div class="container-fluid intermedio">
@@ -153,7 +157,7 @@
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/clock.png" alt="Tome sus registros a tiempo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tome sus registros a tiempo">
                                 </div>
-                                <h4 class="text-uppercase">Registros siempre a tiempo</h4>
+                                <h4 class="">Registros siempre a tiempo</h4>
                                 <p class="text-start">Sus registros serán tomados bajo un régimen de control para ser más precisos <span class="text-muted"> y se representarán de una manera fácil y clara de ver.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más
@@ -170,7 +174,7 @@
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/calendar1.png" alt="Agenda tus turnos medicos" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Agenda tus turnos medicos">
                                 </div>
-                                <h4 class="text-uppercase">Agende sus turnos médicos</h4>
+                                <h4 class="">Agende sus turnos médicos</h4>
                                 <p class="text-start">Podrás comunicarte con doctores, te ayudaremos a registrar los turnos y te enviaremos <span class="text-muted">un mesaje de texto o email de recordatorio.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más 
@@ -187,7 +191,7 @@
                                 <div class="py-3" data-aos="flip-up">
                                     <img src="img/cloud-storage.png" alt="Tu medico al lado tuyo" id="iconos" data-bs-toggle="tooltip" data-bs-placement="top" title="Tu medico al lado tuyo">
                                 </div>
-                                <h4 class="text-uppercase">Siempre estamos disponibles</h4>
+                                <h4 class="">Siempre estamos disponibles</h4>
                                 <p class="text-start">Podrás compartir los registros con el médico de cabecera que elijas.<span class="text-muted"> Tendrás disponible todos tus registros para cuando los necesites.</span></p>
                             </div>
                             <a href="iniciar-sesion.html" class="card-footer btn btn-success text-light">Ver más
@@ -205,7 +209,7 @@
             <h1 class="text-start text-md-center fw-bolder mt-5 p-3 text-wrap display-2">Consejos Diarios de Especialistas</h1>
             <!--Imagenes con propiedad ALT, descriptivas-->
 
-            <div class="row p-5">
+            <div class="row p-5 pt-0 pt-md-5">
                 <div class="col-12  col-lg-4">
                     <blockquote class="blockquote text-start">
                         En la actualidad hay una muy variada gama de aparatos homologados para tomar la TA (tensiómetros) que permiten realizar tomas muy fiables tanto en la consulta como en el propio domicilio, <span class="text-muted">pero para una toma correcta de la TA, es preciso seguir ciertas
