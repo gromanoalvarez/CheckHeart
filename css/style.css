@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Oswald:wght@600&family=Roboto:wght@500&family=Smooch&display=swap');
+@ url de importación ('https://fonts.googleapis.com/css2? family = Oswald: wght @ 400; 600 & display = swap');
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +80,7 @@ ul {
 }
 
 .menu-nav {
-    background-color: #000;
+    background-image: linear-gradient(90deg, #8affde, #3700ff);
     max-width: 100%;
     margin: 0;
 }
@@ -94,9 +95,9 @@ ul {
 }
 
 .navbar-toggler:hover {
-    background: #000;
-    color: #45806F;
+    color: #5500ff;
     border: 0;
+    border-color: #c1a3ff;
 }
 
 .bi-three-dots-vertical {
@@ -180,13 +181,12 @@ aside {
     -moz-box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
     box-shadow: 0px 7px 8px 1px rgba(35, 31, 32, 0.41);
     background: #c1a3ff;
-    background: linear-gradient(0deg, #c1a3ff 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, #d6fff3 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    background: -webkit-linear-gradient(180deg, #ff3700, #5500ff);
+    background: -webkit-linear-gradient(180deg, #00ffb7, #5500ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
@@ -284,7 +284,7 @@ p {
 
 .final {
     background: rgb(184, 219, 209);
-    background: linear-gradient(0deg, #c1a3ff 0%, #fff 100%);
+    background: linear-gradient(0deg, #ABCCC3 0%, #fff 100%);
 }
 
 .regresar {
@@ -337,7 +337,7 @@ footer h3 {
 }
 
 .intermedio {
-    background-image: linear-gradient(180deg, #c1a3ff, #FF9070, #FFF77D, #8affde, #fff);
+    background-image: linear-gradient(180deg, #8affde, #ABCCC3, #d6fff3);
 }
 
 .btn-success {
@@ -361,5 +361,157 @@ footer h3 {
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
+    }
+}
+
+
+/* Some decoration (not needed)*/
+
+.wrapper {
+    width: 100%;
+    height: 300px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Pacman*/
+
+.pacman-wrapper {
+    width: 100%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards, forwards;
+}
+
+.pacman {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+}
+
+.pac {
+    width: 100%;
+    height: 50%;
+    background: yellow;
+    position: absolute;
+}
+
+.top {
+    top: 0;
+    border-radius: 100px 100px 0 0;
+    animation: top .5s infinite linear;
+}
+
+.bot {
+    bottom: 0;
+    border-radius: 0 0 100px 100px;
+    animation: bot .5s infinite linear;
+}
+
+
+/* Dots */
+
+.breadcrumb {
+    width: 100%;
+    transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+}
+
+.ball {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    margin-top: -25px;
+    position: absolute;
+    animation-name: ball;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.ball01 {
+    left: 20%;
+    animation-delay: .6s;
+}
+
+.ball02 {
+    left: 40%;
+    animation-delay: 1.4s;
+}
+
+.ball03 {
+    left: 60%;
+    animation-delay: 2.5s;
+}
+
+.ball04 {
+    left: 80%;
+    animation-delay: 3.5s;
+}
+
+.ball05 {
+    right: 0;
+    animation-delay: 4.3s;
+}
+
+
+/* @keyframes
+ Pacman slide*/
+
+@keyframes slide {
+    from {
+        transform: translate(0, -50%);
+    }
+    to {
+        transform: translate(100%, -50%);
+    }
+}
+
+
+/* Pacman top animation*/
+
+@keyframes top {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-35deg);
+    }
+}
+
+
+/* Pacman bot animation */
+
+@keyframes bot {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(35deg);
+    }
+}
+
+
+/* Dots opacity*/
+
+@keyframes ball {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
