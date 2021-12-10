@@ -515,3 +515,14 @@ footer h3 {
         opacity: 0;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    h1::after {
+        content: dark;
+        color: #00ffb7;
+    }
+    h4::after {
+        content: dark;
+        color: #c1a3ff;
+    }
+}
