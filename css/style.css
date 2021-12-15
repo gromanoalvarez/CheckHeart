@@ -363,3 +363,9 @@ footer h3 {
         font-size: 3.5rem;
     }
 }
+textarea{
+    caret-color: #ff3700 ;
+    height: 7em;
+    font-size: xx-large;
+    width: 1em;
+}
