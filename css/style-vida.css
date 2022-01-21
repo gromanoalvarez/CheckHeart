@@ -14,7 +14,8 @@
 }
 
 .preguntas {
-    text-decoration: wavy;
+    -webkit-text-decoration: wavy;
+            text-decoration: wavy;
     color: #000;
     overflow: hidden;
 
